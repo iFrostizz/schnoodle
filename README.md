@@ -1,3 +1,15 @@
+## Notes
+
+smoll nit with libs
+
+install manually before building:
+
+`forge install foundry-rs/forge-std`
+
+and you should be good
+
+`forge b`
+
 ## welcome to unhacked
 
 _unhacked_ is a weekly ctf, giving whitehats the chance to go back in time before real exploits and recover funds before the bad guys get them. 

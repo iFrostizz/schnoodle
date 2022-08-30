@@ -360,6 +360,7 @@ contract ERC777Upgradeable is Initializable, ContextUpgradeable, IERC777Upgradea
         emit Transfer(address(0), account, amount);
     }
 
+    // @ctf this is the function responsible for having callbacks
     /**
      * @dev Send tokens
      * @param from address token holder address
