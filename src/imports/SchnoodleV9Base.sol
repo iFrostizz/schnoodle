@@ -89,11 +89,13 @@ abstract contract SchnoodleV9Base is ERC777PresetFixedSupplyUpgradeable, Ownable
         return amount * _getReflectRate();
     }
 
+    // This always return 0 
     function _getStandardAmount(uint256 reflectedAmount) internal view returns(uint256) {
         // Condition prevents a divide-by-zero error when the total supply is zero
         return reflectedAmount == 0 ? 0 : reflectedAmount / _getReflectRate();
     }
 
+    // Returns a large value
     function _getReflectRate() private view returns(uint256) {
         uint256 reflectedTotalSupply = super.totalSupply();
         return reflectedTotalSupply == 0 ? 0 : reflectedTotalSupply / totalSupply();
